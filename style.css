@@ -1,0 +1,138 @@
+
+
+@font-face {
+    font-family: 'regards.oft';
+    src: url(./Regards-Font/regards.otf);
+}
+  
+h1 {
+    font-family: 'regards.oft', Georgia, 'Times New Roman', Times, serif;
+    color: #C87041;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'regards.oft', Georgia, 'Times New Roman', Times, serif;
+    color: #2C5243;
+}
+
+img {
+    height: 250px;
+    width: 100%; 
+}
+
+p {
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+    color: #2E3A38;
+}
+
+.nav-bar {
+    background-color: #2C5243;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar p {
+    font-family: 'regards.oft', Georgia, 'Times New Roman', Times, serif;
+    color: #E5D599;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+body {
+    margin: 0;
+    background-color: #F0ECE3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-img {
+    height: 40px;
+    width: 40px;
+}
+
+footer {
+    background-color: #2C5243;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer p {
+    color: #E5D599;
+}
+
+main {
+    min-height: 86vh;
+}
+
+.intro-block {
+    display: flex;
+    align-items: center;
+    padding-top: 44px;
+    justify-content: center;
+}
+
+.intro-titles {
+    max-width: 620px;
+}
+
+.main-intro {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px 20px 20px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .intro-block {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav-bar p {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .intro-titles h1 {
+        font-size: 32px;
+    }
+
+    img {
+        height: auto;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .main-intro {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .intro-titles h1 {
+        font-size: 24px;
+    }
+
+    .main-intro p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
